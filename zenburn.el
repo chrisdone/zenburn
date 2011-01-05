@@ -380,16 +380,16 @@ static char *gnus-pointer[] = {
 
 	`(fancy-widget-button
 	   ((t (:background ,zenburn-bg+1
-		 :box (:line-width 2 :style released-button)))))
+		 :box (:line-width 1 :style released-button)))))
 	`(fancy-widget-button-pressed
 	   ((t (:background ,zenburn-bg+1
-		 :box (:line-width 2 :style pressed-button)))))
+		 :box (:line-width 1 :style pressed-button)))))
 	`(fancy-widget-button-highlight
 	   ((t (:background ,zenburn-bg+1
-		 :box (:line-width 2 :style released-button)))))
+		 :box (:line-width 1 :style released-button)))))
 	`(fancy-widget-button-pressed-highlight
 	   ((t (:background ,zenburn-bg+1
-		 :box (:line-width 2 :style pressed-button)))))
+		 :box (:line-width 1 :style pressed-button)))))
 	'(fancy-widget-documentation
 	   ((t (:inherit font-lock-doc))))
 	`(fancy-widget-field
@@ -419,11 +419,11 @@ static char *gnus-pointer[] = {
 	`(border ((t (:background ,zenburn-bg))))
 	'(fringe ((t (:inherit zenburn-highlight-subtle))))
 	'(header-line ((t (:inherit zenburn-highlight-damp
-			    :box (:color "#2e3330" :line-width 2)))))
+			    :box (:color "#2e3330" :line-width 1)))))
 	'(mode-line ((t (:foreground "#acbc90" :background "#1e2320"
-			  :box (:color "#1e2320" :line-width 2)))))
+			  :box (:color "#1e2320" :line-width 1)))))
 	'(mode-line-inactive ((t (:background "#2e3330" :foreground "#88b090"
-				   :box (:color "#2e3330" :line-width 2)))))
+				   :box (:color "#2e3330" :line-width 1)))))
 	`(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
 	`(Buffer-menu-buffer ((t (:inherit zenburn-primary-1))))
 
@@ -434,13 +434,12 @@ static char *gnus-pointer[] = {
 	'(highlight ((t (:underline t))))
 	'(paren ((t (:inherit zenburn-lowlight-1))))
 	'(show-paren-mismatch ((t (:inherit font-lock-warning))))
-	`(show-paren-match ((t (:foreground ,zenburn-blue-1 :underline t))))
+        '(show-paren-match ((t (:inherit zenburn-highlight-damp))))
 	'(match ((t (:weight bold))))
 
 	`(button ((t (:foreground ,zenburn-yellow :background "#506070"
 		       :weight bold :underline t))))
 
-	`(cursor ((t (:background "#aaaaaa" :foreground nil))))
 	'(hover-highlight ((t (:underline t :foreground "#f8f893"))))
 	'(menu ((t nil)))
 	'(mouse ((t (:inherit zenburn-foreground))))
@@ -528,6 +527,10 @@ static char *gnus-pointer[] = {
 	   ((t (:inherit font-lock-warning))))
 	'(custom-modified
 	   ((t (:inherit zenburn-primary-3))))
+        '(custom-button-mouse
+           ((t (:background "grey90"
+                :foreground "black"
+                :box (:line-width 1 :style released-button)))))
 	'(custom-rogue
 	   ((t (:inhrit font-lock-warning))))
 	'(custom-saved
@@ -1030,7 +1033,15 @@ static char *gnus-pointer[] = {
 	'(mew-face-mark-unread ((t (:inherit zenburn-red-2))))
 	'(mew-face-eof-message ((t (:inherit zenburn-green))))
 	'(mew-face-eof-part ((t (:inherit zenburn-yellow))))
-	)
+
+        '(slime-repl-inputed-output-face ((t (:inherit font-lock-warning))))
+        '(slime-highlight-edits-face ((t (:background "gray20"))))
+        '(magit-item-highlight ((t (:background "gray20"))))
+        '(magit-diff-add ((t (:foreground "LimeGreen"))))
+        '(magit-diff-file-header ((t (:foreground "#ffffff"))))
+        '(magit-diff-hunk-header ((t (:inherit magit-header) (:foreground "cyan3"))))
+        '(magit-diff-none ((t (:foreground "gray50"))))
+        )
 
       (zenburn-make-face-alias-clauses
 	'(Buffer-menu-buffer-face
