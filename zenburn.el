@@ -323,6 +323,8 @@ static char *gnus-pointer[] = {
 	`(font-lock-variable-name
 	   ((t (:foreground ,zenburn-yellow))))
 	'(font-lock-warning
+	   ((t (:inherit zenburn-highlight-damp))))
+	'(font-lock-error
 	   ((t (:inherit zenburn-highlight-alerting))))
 
 	'(fixme-face ((t (:foreground "#dcdccc" :background "#3f3f3f"
@@ -499,6 +501,7 @@ static char *gnus-pointer[] = {
 
 	'(compilation-info ((t (:inherit zenburn-primary-1))))
 	'(compilation-warning ((t (:inherit font-lock-warning))))
+	'(compilation-error ((t (:inherit font-lock-error))))
 
 	;; TODO
 	'(cua-rectangle ((t (:inherit region))))
@@ -1037,7 +1040,7 @@ static char *gnus-pointer[] = {
         '(slime-repl-inputed-output-face ((t (:inherit font-lock-warning))))
         '(slime-highlight-edits-face ((t (:background "gray20"))))
         '(magit-item-highlight ((t (:background "gray20"))))
-        '(magit-diff-add ((t (:foreground "#719653"))))
+        '(magit-diff-add ((t (:foreground "#89b664"))))
         '(magit-diff-del ((t (:foreground "#ae6161"))))
         '(magit-diff-file-header ((t (:foreground "#ffffff"))))
         '(magit-diff-hunk-header ((t (:inherit magit-header) (:foreground "cyan3"))))
