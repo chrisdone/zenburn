@@ -90,7 +90,6 @@
 (require 'color-theme)
 
 (defvar zenburn-fg "#dcdccc")
-
 (defvar zenburn-bg-1 "#2b2b2b")
 (defvar zenburn-bg "#3f3f3f")
 (defvar zenburn-bg+1 "#4f4f4f")
@@ -1371,8 +1370,7 @@ static char *gnus-pointer[] = {
 	   identica-uri-face
 	   twitter-time-stamp-face
 	   twitter-user-name-face
-	   twitter-header-face
-	   ))
+	   twitter-header-face))
       )))
 
 (defalias 'zenburn #'color-theme-zenburn)
