@@ -540,7 +540,7 @@ to values."
 	`(erc-error ((t (:inherit font-lock-warning))))
 	`(erc-fool ((t (:inherit sunburn-lowlight-1))))
 	`(erc-highlight ((t (:inherit hover-highlight))))
-	`(erc-input ((t (:foreground ,sunburn-green))))
+	`(erc-input ((t (:foreground ,sunburn-magenta))))
 	`(erc-keyword ((t (:inherit sunburn-primary-1))))
 	`(erc-nick-default ((t (:inherit sunburn-primary-1))))
 	`(erc-nick-msg ((t (:inherit erc-default))))
