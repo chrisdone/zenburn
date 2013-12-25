@@ -119,20 +119,16 @@
 (defvar zenburn-blue-4 "#4c7073")
 (defvar zenburn-blue-5 "#366060")
 (defvar zenburn-magenta "#dc8cc3")
-
 (defvar zenburn-primary-3-foreground "#dfdfbf")
 (defvar zenburn-primary-4-foreground zenburn-red+1)
 (defvar zenburn-primary-5-foreground zenburn-blue+1)
-
 (defvar zenburn-highlight-damp-foreground "#88b090")
 (defvar zenburn-highlight-damp-background "#2e3330")
 (defvar zenburn-highlight-alerting-foreground "#e37170")
 (defvar zenburn-highlight-alerting-background "#332323")
 (defvar zenburn-highlight-subtle-background "#464646")
-
 (defvar zenburn-lowlight-1-foreground "#606060")
 (defvar zenburn-lowlight-2-foreground "#708070")
-
 (defvar zenburn-term-dark-gray-foreground "#709080")
 (defvar zenburn-term-light-blue-foreground zenburn-blue+1)
 (defvar zenburn-term-light-cyan-foreground zenburn-cyan)
@@ -140,7 +136,6 @@
 (defvar zenburn-term-light-magenta-foreground "#ec93d3")
 (defvar zenburn-term-light-red-foreground zenburn-red+1)
 (defvar zenburn-term-light-yellow-foreground zenburn-yellow)
-
 (defvar zenburn-term-white-foreground "#ffffff")
 (defvar zenburn-term-black-foreground "#000000")
 (defvar zenburn-term-dark-blue-foreground "#506070")
@@ -149,95 +144,20 @@
 (defvar zenburn-term-dark-magenta-foreground zenburn-magenta)
 (defvar zenburn-term-dark-red-foreground "#705050")
 (defvar zenburn-term-dark-yellow-foreground zenburn-orange)
-
 (defvar zenburn-mode-line-foreground "#acbc90")
 (defvar zenburn-mode-line-background "#1e2320")
-
 (defvar zenburn-hover-highlight-foreground "#f8f893")
-
 (defvar zenburn-active-region-background "#233323")
-
 (defvar zenburn-archived-foreground "#8f8f8f")
 (defvar zenburn-hidden-foreground "#282828")
-
 (defvar zenburn-grid-foreground "#ffc9a4")
 (defvar zenburn-new-foreground "#e89393")
 (defvar zenburn-indent-foreground "#ecbcec")
 (defvar zenburn-top-foreground "#efdcbc")
-
 (defvar zenburn-diff-add-foreground "#89b664")
 (defvar zenburn-diff-del-foreground "#ae6161")
-
 (defvar zenburn-hunk-header-foreground "#fefefe")
-
-(defvar zenburn-none-background "#888888")
-
-(defvar fixme-face-foreground zenburn-fg)
-(defvar fixme-face-background zenburn-bg)
-(defvar semantic-tag-boundary-face-overline zenburn-bg+2)
-(defvar semantic-decoration-on-unparsed-includes-foreground zenburn-highlight-damp-foreground)
-(defvar semantic-decoration-on-unparsed-includes-background zenburn-highlight-damp-background)
-(defvar header-line-color zenburn-highlight-damp-background)
-(defvar mode-line-foreground zenburn-mode-line-foreground)
-(defvar mode-line-background zenburn-mode-line-background)
-(defvar mode-line-color mode-line-background)
-(defvar mode-line-inactive-background zenburn-highlight-damp-background)
-(defvar mode-line-inactive-foreground zenburn-highlight-damp-foreground)
-(defvar mode-line-inactive-color zenburn-highlight-damp-background)
-(defvar secondary-selection-background zenburn-term-dark-blue-foreground)
-(defvar button-background zenburn-term-dark-blue-foreground)
-(defvar hover-highlight-foreground zenburn-hover-highlight-foreground)
-(defvar icompletep-choices-foreground zenburn-fg)
-(defvar icompletep-determined-foreground zenburn-green+1)
-(defvar icompletep-nb-candidates-foreground zenburn-green+3)
-(defvar icompletep-keys-foreground zenburn-red)
-(defvar isearch-background zenburn-term-dark-blue-foreground)
-(defvar isearch-lazy-highlight-background mode-line-background)
-(defvar minimap-active-region-background zenburn-active-region-background)
-(defvar bongo-unfilled-seek-bar-background zenburn-lowlight-1-foreground)
-(defvar eshell-ls-archive-foreground zenburn-term-light-green-foreground)
-(defvar makefile-shell-background zenburn-bg+1)
-(defvar makefile-shell-color zenburn-bg+1)
-(defvar org-archived-foreground zenburn-archived-foreground)
-(defvar org-checkbox-background zenburn-bg+2)
-(defvar org-date-foreground zenburn-blue)
-(defvar org-deadline-announce-foreground zenburn-red-1)
-(defvar org-done-foreground zenburn-green+3)
-(defvar org-formula-foreground zenburn-yellow-2)
-(defvar org-headline-done-foreground zenburn-green+3)
-(defvar org-hide-foreground zenburn-hidden-foreground)
-(defvar org-level-1-foreground zenburn-orange)
-(defvar org-level-2-foreground zenburn-yellow)
-(defvar org-level-3-foreground zenburn-blue)
-(defvar org-level-4-foreground zenburn-cyan)
-(defvar org-level-5-foreground zenburn-blue-1)
-(defvar org-level-6-foreground zenburn-blue-2)
-(defvar org-level-7-foreground zenburn-blue-3)
-(defvar org-level-8-foreground zenburn-blue-4)
-(defvar org-link-foreground zenburn-yellow-2)
-(defvar org-scheduled-foreground zenburn-green+4)
-(defvar org-scheduled-previously-foreground zenburn-red-4)
-(defvar org-scheduled-today-foreground zenburn-blue+1)
-(defvar org-special-keyword-foreground zenburn-yellow-1)
-(defvar org-table-foreground zenburn-green+2)
-(defvar org-time-grid-foreground zenburn-grid-foreground)
-(defvar org-todo-foreground zenburn-red)
-(defvar org-warning-foreground zenburn-red)
-(defvar elscreen-tab-current-screen-background mode-line-background)
-(defvar wl-highlight-message-cited-text-3-foreground org-archived-foreground)
-(defvar wl-highlight-summary-new-foreground zenburn-new-foreground)
-(defvar wl-highlight-thread-indent-foreground zenburn-indent-foreground)
-(defvar wl-highlight-summary-thread-top-foreground zenburn-top-foreground)
-(defvar wl-highlight-folder-unread-foreground wl-highlight-summary-new-foreground)
-(defvar twitter-time-stamp-background mode-line-background)
-(defvar twitter-user-name-foreground mode-line-foreground)
-(defvar twitter-user-name-background mode-line-background)
-(defvar twitter-header-background mode-line-background)
-(defvar magit-diff-add-foreground zenburn-diff-add-foreground)
-(defvar magit-diff-del-foreground zenburn-diff-del-foreground)
-(defvar magit-diff-file-header-foreground zenburn-term-white-foreground)
-(defvar magit-diff-hunk-header-foreground zenburn-hunk-header-foreground)
-(defvar magit-diff-none-foreground zenburn-none-foreground)
+(defvar zenburn-none-foreground "#888888")
 
 (eval-after-load 'term
   '(setq ansi-term-color-vector
@@ -429,12 +349,12 @@ to values."
 	'(font-lock-error
 	   ((t (:inherit zenburn-highlight-alerting))))
 
-	`(fixme-face ((t (:foreground ,fixme-face-foreground :background ,fixme-face-background
+	`(fixme-face ((t (:foreground ,fixme-face-foreground :background ,zenburn-bg
                                       :weight bold :box nil)))) ; Colours taken from vim ":hl Todo"
 
-	`(semantic-tag-boundary-face ((t (:overline ,semantic-tag-boundary-face-overline)))) ; zenburn-bg+2
+	`(semantic-tag-boundary-face ((t (:overline ,zenburn-bg+2)))) ; zenburn-bg+2
 	`(semantic-decoration-on-unparsed-includes
-	  ((t (:foreground ,semantic-decoration-on-unparsed-includes-foreground :background ,semantic-decoration-on-unparsed-includes-background)))) ; zenburn-highlight-damp
+	  ((t (:foreground ,zenburn-highlight-damp-foreground :background ,zenburn-highlight-damp-background)))) ; zenburn-highlight-damp
 
 	`(font-lock-pseudo-keyword
 	   ((t (:inherit zenburn-primary-2))))
@@ -523,16 +443,16 @@ to values."
 	`(border ((t (:background ,zenburn-bg))))
 	`(fringe ((t (:inherit zenburn-highlight-subtle))))
 	`(header-line ((t (:inherit zenburn-highlight-damp
-			    :box (:color ,header-line-color :line-width 1)))))
-	`(mode-line ((t (:foreground ,mode-line-foreground :background ,mode-line-background
-			  :box (:color ,mode-line-color :line-width 1)))))
-	`(mode-line-inactive ((t (:background ,mode-line-inactive-background :foreground ,mode-line-inactive-foreground
-				   :box (:color ,mode-line-inactive-color :line-width 1)))))
+			    :box (:color ,zenburn-highlight-damp-background :line-width 1)))))
+	`(mode-line ((t (:foreground ,zenburn-mode-line-foreground :background ,zenburn-mode-line-background
+			  :box (:color ,zenburn-mode-line-background :line-width 1)))))
+	`(mode-line-inactive ((t (:background ,zenburn-highlight-damp-background :foreground ,zenburn-highlight-damp-foreground
+				   :box (:color ,zenburn-highlight-damp-background :line-width 1)))))
 	`(minibuffer-prompt ((t (:foreground ,zenburn-yellow))))
 	`(Buffer-menu-buffer ((t (:inherit zenburn-primary-1))))
 
 	`(region ((t (:foreground nil :background ,zenburn-bg+2))))
-	`(secondary-selection ((t (:foreground nil :background ,secondary-selection-background))))
+	`(secondary-selection ((t (:foreground nil :background ,zenburn-term-dark-blue-foreground))))
 
 	`(trailing-whitespace ((t (:inherit font-lock-warning))))
 	`(highlight ((t (:underline t))))
@@ -541,10 +461,10 @@ to values."
         `(show-paren-match ((t (:inherit zenburn-highlight-damp))))
 	`(match ((t (:weight bold))))
 
-	`(button ((t (:foreground ,zenburn-yellow :background ,button-background
+	`(button ((t (:foreground ,zenburn-yellow :background ,zenburn-term-dark-blue-foreground
 		       :weight bold :underline t))))
 
-	`(hover-highlight ((t (:underline t :foreground ,hover-highlight-foreground))))
+	`(hover-highlight ((t (:underline t :foreground ,zenburn-hover-highlight-foreground))))
 	`(menu ((t nil)))
 	`(mouse ((t (:inherit zenburn-foreground))))
 	`(scroll-bar ((t (:background ,zenburn-bg+2))))
@@ -554,20 +474,20 @@ to values."
 	`(ido-only-match ((t (:inherit zenburn-primary-2))))
 	`(ido-subdir ((t (:foreground ,zenburn-yellow))))
 
-	`(icompletep-choices ((t (:foreground ,icompletep-choices-foreground)))) ; zenburn-fg
-	`(icompletep-determined ((t (:foreground ,icompletep-determined-foreground)))) ; zenburn-green+1
-	`(icompletep-nb-candidates ((t (:foreground ,icompletep-nb-candidates-foreground)))) ; zenburn-green+3
-	`(icompletep-keys ((t (:foreground ,icompletep-keys-foreground)))) ; zenburn-red
+	`(icompletep-choices ((t (:foreground ,zenburn-fg)))) ; zenburn-fg
+	`(icompletep-determined ((t (:foreground ,zenburn-green+1)))) ; zenburn-green+1
+	`(icompletep-nb-candidates ((t (:foreground ,zenburn-green+3)))) ; zenburn-green+3
+	`(icompletep-keys ((t (:foreground ,zenburn-red)))) ; zenburn-red
 
-	`(isearch ((t (:foreground ,zenburn-fg :background ,isearch-background))))
+	`(isearch ((t (:foreground ,zenburn-fg :background ,zenburn-term-dark-blue-foreground))))
 	`(isearch-lazy-highlight
-	   ((t (:foreground ,zenburn-fg :background ,isearch-lazy-highlight-background :weight normal))))
+	   ((t (:foreground ,zenburn-fg :background ,zenburn-mode-line-background :weight normal))))
 
 	`(mtorus-highlight ((t (:inherit zenburn-highlight-bluish))))
 	`(mtorus-notify-highlight ((t (:inherit zenburn-primary-1))))
 
-	`(minimap-active-region-background ((t (:foreground nil
-						 :background ,minimap-active-region-background))))
+	`(zenburn-active-region-background ((t (:foreground nil
+						 :background ,zenburn-active-region-background))))
 	`(which-func ((t (:inherit mode-line))))
 
 	`(apt-utils-normal-package
@@ -594,7 +514,7 @@ to values."
 	`(diary ((t (:underline nil :inherit zenburn-primary-1))))
 	`(holiday ((t (:underline t :inherit zenburn-primary-4))))
 
-	`(bongo-unfilled-seek-bar ((t (:background ,bongo-unfilled-seek-bar-background))))
+	`(bongo-unfilled-seek-bar ((t (:background ,zenburn-lowlight-1-foreground))))
 
 	`(change-log-date ((t (:inherit zenburn-blue))))
 
@@ -704,7 +624,7 @@ to values."
 	`(rcirc-mode-line-nick ((t (:inherit zenburn-primary-1))))
 
 	`(eshell-prompt ((t (:inherit zenburn-primary-1))))
-	`(eshell-ls-archive ((t (:foreground ,eshell-ls-archive-foreground :weight bold))))
+	`(eshell-ls-archive ((t (:foreground ,zenburn-term-light-green-foreground :weight bold))))
 	`(eshell-ls-backup ((t (:inherit font-lock-comment))))
 	`(eshell-ls-clutter ((t (:inherit font-lock-comment))))
 	`(eshell-ls-directory ((t (:foreground ,zenburn-blue+1 :weight bold))))
@@ -898,8 +818,8 @@ to values."
 	`(makefile-shell ((t (nil))))
 	;; This does not work very well because everything that's highlighted
 	;; inside the shell region will get its own box.
-	;; (makefile-shell ((t (:background ,makefile-shell-background
-	;;                           :box (:line-width 2 :color ,makefile-shell-color)))))
+	;; (makefile-shell ((t (:background ,zenburn-bg+1
+	;;                           :box (:line-width 2 :color ,zenburn-bg+1)))))
 
 	`(nxml-delimited-data ((t (:inherit font-lock-string))))
 	`(nxml-name ((t (:inherit zenburn-primary-1))))
@@ -958,36 +878,36 @@ to values."
 	`(org-agenda-date-today ((t (:foreground "white"
 				      :slant italic :weight bold))) t)       ;; white
 	`(org-agenda-structure ((t (:inherit font-lock-comment-face))))  ;; zenburn-green
-	`(org-archived ((t (:foreground ,org-archived-foreground))))                    ;; zenburn-bg slight lighter
+	`(org-archived ((t (:foreground ,zenburn-archived-foreground))))                    ;; zenburn-bg slight lighter
 	`(org-column ((t (:height 98 :family "DejaVu Sans Mono"))))      ;; n/a
-	`(org-checkbox ((t (:background ,org-checkbox-background :foreground "white"    ;; zenburn-fg on zenburn-bg+2
+	`(org-checkbox ((t (:background ,zenburn-bg+2 :foreground "white"    ;; zenburn-fg on zenburn-bg+2
 			     :box (:line-width 1 :style released-button))))) ;;   - turn checkboxes into buttons
-	`(org-date ((t (:foreground ,org-date-foreground :underline t))))           ;; zenburn-blue
-	`(org-deadline-announce ((t (:foreground ,org-deadline-announce-foreground))))           ;; zenburn-red-1
-	`(org-done ((t (:bold t :weight bold :foreground ,org-done-foreground))))   ;; zenburn-green+3
-	`(org-formula ((t (:foreground ,org-formula-foreground))))                     ;; zenburn-yellow-2
-	`(org-headline-done ((t (:foreground ,org-headline-done-foreground))))               ;; zenburn-green+3
-	`(org-hide ((t (:foreground ,org-hide-foreground))))                        ;; zenburn-bg slight darker
-	`(org-level-1 ((t (:foreground ,org-level-1-foreground))))                     ;; zenburn-orange
-	`(org-level-2 ((t (:foreground ,org-level-2-foreground))))                     ;; zenburn-yellow
-	`(org-level-3 ((t (:foreground ,org-level-3-foreground))))                     ;; zenburn-blue
-	`(org-level-4 ((t (:foreground ,org-level-4-foreground))))                     ;; zenburn-cyan
-	`(org-level-5 ((t (:foreground ,org-level-5-foreground))))                     ;; zenburn-blue-1
-	`(org-level-6 ((t (:foreground ,org-level-6-foreground))))                     ;; zenburn-blue-2
-	`(org-level-7 ((t (:foreground ,org-level-7-foreground))))                     ;; zenburn-blue-3
-	`(org-level-8 ((t (:foreground ,org-level-8-foreground))))                     ;; zenburn-blue-4
-	`(org-link ((t (:foreground ,org-link-foreground :underline t))))           ;; zenburn-yellow-2
+	`(org-date ((t (:foreground ,zenburn-blue :underline t))))           ;; zenburn-blue
+	`(org-deadline-announce ((t (:foreground ,zenburn-red-1))))           ;; zenburn-red-1
+	`(org-done ((t (:bold t :weight bold :foreground ,zenburn-green+3))))   ;; zenburn-green+3
+	`(org-formula ((t (:foreground ,zenburn-yellow-2))))                     ;; zenburn-yellow-2
+	`(org-headline-done ((t (:foreground ,zenburn-green+3))))               ;; zenburn-green+3
+	`(org-hide ((t (:foreground ,zenburn-hidden-foreground))))                        ;; zenburn-bg slight darker
+	`(org-level-1 ((t (:foreground ,zenburn-orange))))                     ;; zenburn-orange
+	`(org-level-2 ((t (:foreground ,zenburn-yellow))))                     ;; zenburn-yellow
+	`(org-level-3 ((t (:foreground ,zenburn-blue))))                     ;; zenburn-blue
+	`(org-level-4 ((t (:foreground ,zenburn-cyan))))                     ;; zenburn-cyan
+	`(org-level-5 ((t (:foreground ,zenburn-blue-1))))                     ;; zenburn-blue-1
+	`(org-level-6 ((t (:foreground ,zenburn-blue-2))))                     ;; zenburn-blue-2
+	`(org-level-7 ((t (:foreground ,zenburn-blue-3))))                     ;; zenburn-blue-3
+	`(org-level-8 ((t (:foreground ,zenburn-blue-4))))                     ;; zenburn-blue-4
+	`(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))           ;; zenburn-yellow-2
 					;`(org-priority faces                                            TODO
-	`(org-scheduled ((t (:foreground ,org-scheduled-foreground))))                   ;; zenburn-green+4
-	`(org-scheduled-previously ((t (:foreground ,org-scheduled-previously-foreground))))        ;; zenburn-red-4
-	`(org-scheduled-today ((t (:foreground ,org-scheduled-today-foreground))))             ;; zenburn-blue+1
-	`(org-special-keyword ((t (:foreground ,org-special-keyword-foreground))))             ;; zenburn-yellow-1
-	`(org-table ((t (:foreground ,org-table-foreground))))                       ;; zenburn-green+2
+	`(org-scheduled ((t (:foreground ,zenburn-green+4))))                   ;; zenburn-green+4
+	`(org-scheduled-previously ((t (:foreground ,zenburn-red-4))))        ;; zenburn-red-4
+	`(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))             ;; zenburn-blue+1
+	`(org-special-keyword ((t (:foreground ,zenburn-yellow-1))))             ;; zenburn-yellow-1
+	`(org-table ((t (:foreground ,zenburn-green+2))))                       ;; zenburn-green+2
 	`(org-tag ((t (:bold t :weight bold))))                          ;; n/a
-	`(org-time-grid ((t (:foreground ,org-time-grid-foreground))))                   ;; zenburn-orange slight lighter
-	`(org-todo ((t (:bold t :foreground ,org-todo-foreground :weight bold))))   ;; zenburn-red
+	`(org-time-grid ((t (:foreground ,zenburn-grid-foreground))))                   ;; zenburn-orange slight lighter
+	`(org-todo ((t (:bold t :foreground ,zenburn-red :weight bold))))   ;; zenburn-red
 	`(org-upcoming-deadline ((t (:inherit font-lock-keyword-face)))) ;; zenburn-fg
-	`(org-warning ((t (:bold t :foreground ,org-warning-foreground :weight bold))));; zenburn-red
+	`(org-warning ((t (:bold t :foreground ,zenburn-red :weight bold))));; zenburn-red
 
 	;; TODO
 	`(outline-8 ((t (:inherit default))))
@@ -1061,7 +981,7 @@ to values."
 	`(elscreen-tab-other-screen ((t ((:foreground ,zenburn-fg
 					   :background ,zenburn-green-1)))))
 	`(elscreen-tab-current-screen ((t (:foreground ,zenburn-blue+1
-					    :background ,elscreen-tab-current-screen-background))))
+					    :background ,zenburn-mode-line-background))))
 
 	`(wl-highlight-message-headers ((t (:inherit zenburn-red+1))))
 	`(wl-highlight-message-header-contents ((t (:inherit zenburn-green))))
@@ -1075,32 +995,32 @@ to values."
 
 	`(wl-highlight-message-cited-text-1 ((t (:inherit zenburn-green))))
 	`(wl-highlight-message-cited-text-2 ((t (:inherit zenburn-blue))))
-	`(wl-highlight-message-cited-text-3 ((t (:foreground ,wl-highlight-message-cited-text-3-foreground))))
+	`(wl-highlight-message-cited-text-3 ((t (:foreground ,zenburn-archived-foreground))))
 	`(wl-highlight-message-cited-text-4 ((t (:inherit zenburn-green))))
 
 	`(wl-highlight-message-signature ((t (:inherit zenburn-yellow))))
 
 	`(wl-highlight-summary-answered ((t (:inherit zenburn-fg))))
-	`(wl-highlight-summary-new ((t (:foreground ,wl-highlight-summary-new-foreground))))
+	`(wl-highlight-summary-new ((t (:foreground ,zenburn-new-foreground))))
 
 	`(wl-highlight-summary-displaying ((t (:underline t
 						:foreground ,zenburn-yellow-2))))
 
-	`(wl-highlight-thread-indent ((t (:foreground ,wl-highlight-thread-indent-foreground))))
-	`(wl-highlight-summary-thread-top ((t (:foreground ,wl-highlight-summary-thread-top-foreground))))
+	`(wl-highlight-thread-indent ((t (:foreground ,zenburn-indent-foreground))))
+	`(wl-highlight-summary-thread-top ((t (:foreground ,zenburn-top-foreground))))
 
 	`(wl-highlight-summary-normal ((t (:inherit zenburn-fg))))
 
 	`(wl-highlight-folder-zero ((t (:inherit zenburn-fg))))
 	`(wl-highlight-folder-few ((t (:inherit zenburn-red+1))))
 	`(wl-highlight-folder-many ((t (:inherit zenburn-red+1))))
-	`(wl-highlight-folder-unread ((t (:foreground ,wl-highlight-folder-unread-foreground))))
+	`(wl-highlight-folder-unread ((t (:foreground ,zenburn-new-foreground))))
 
 	`(wl-highlight-folder-path ((t (:inherit zenburn-orange))))
 
-	`(twitter-time-stamp ((t (:foreground ,zenburn-orange :background ,twitter-time-stamp-background))))
-	`(twitter-user-name ((t (:foreground ,twitter-user-name-foreground :background ,twitter-user-name-background))))
-	`(twitter-header ((t (:foreground ,zenburn-orange :background ,twitter-header-background))))
+	`(twitter-time-stamp ((t (:foreground ,zenburn-orange :background ,zenburn-mode-line-background))))
+	`(twitter-user-name ((t (:foreground ,zenburn-mode-line-foreground :background ,zenburn-mode-line-background))))
+	`(twitter-header ((t (:foreground ,zenburn-orange :background ,zenburn-mode-line-background))))
 
 	`(rpm-spec-dir ((t (:inherit zenburn-green))))
 	`(rpm-spec-doc ((t (:inherit zenburn-green))))
@@ -1142,11 +1062,11 @@ to values."
         `(slime-repl-inputed-output-face ((t (:inherit font-lock-warning))))
         `(slime-highlight-edits-face ((t (:background "gray20"))))
         `(magit-item-highlight ((t (:background "gray20"))))
-        `(magit-diff-add ((t (:foreground ,magit-diff-add-foreground))))
-        `(magit-diff-del ((t (:foreground ,magit-diff-del-foreground))))
-        `(magit-diff-file-header ((t (:foreground ,magit-diff-file-header-foreground))))
-        `(magit-diff-hunk-header ((t (:inherit magit-header) (:foreground ,magit-diff-hunk-header-foreground))))
-        `(magit-diff-none ((t (:foreground ,magit-diff-none-foreground))))
+        `(magit-diff-add ((t (:foreground ,zenburn-diff-add-foreground))))
+        `(magit-diff-del ((t (:foreground ,zenburn-diff-del-foreground))))
+        `(magit-diff-file-header ((t (:foreground ,zenburn-term-white-foreground))))
+        `(magit-diff-hunk-header ((t (:inherit magit-header) (:foreground ,zenburn-hunk-header-foreground))))
+        `(magit-diff-none ((t (:foreground ,zenburn-none-foreground))))
         )
 
       (zenburn-make-face-alias-clauses
