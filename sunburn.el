@@ -532,7 +532,8 @@ to values."
 
 	`(erc-action ((t (:inherit erc-default))))
 	`(erc-bold ((t (:weight bold))))
-	`(erc-current-nick ((t (:inherit sunburn-primary-1))))
+	`(erc-current-nick ((t (:inherit sunburn-primary-3))))
+        `(erc-my-nick ((t (:foreground ,sunburn-blue :weight bold))))
 	`(erc-dangerous-host ((t (:inherit font-lock-warning))))
 	`(erc-default ((t (:foreground ,sunburn-fg))))
 	`(erc-direct-msg ((t (:inherit erc-default))))
@@ -541,7 +542,7 @@ to values."
 	`(erc-highlight ((t (:inherit hover-highlight))))
 	`(erc-input ((t (:foreground ,sunburn-green))))
 	`(erc-keyword ((t (:inherit sunburn-primary-1))))
-	`(erc-nick-default ((t (:inherit bold))))
+	`(erc-nick-default ((t (:inherit sunburn-primary-1))))
 	`(erc-nick-msg ((t (:inherit erc-default))))
 	`(erc-notice ((t (:inherit sunburn-green))))
 	`(erc-pal ((t (:inherit sunburn-primary-3))))
