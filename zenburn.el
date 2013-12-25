@@ -126,7 +126,7 @@
 (defvar zenburn-highlight-damp-background "#2e3330")
 (defvar zenburn-highlight-alerting-foreground "#e37170")
 (defvar zenburn-highlight-alerting-background "#332323")
-(defvar fzenburn-highlight-subtle-background "#464646")
+(defvar zenburn-highlight-subtle-background "#464646")
 (defvar zenburn-lowlight-1-foreground "#606060")
 (defvar zenburn-lowlight-2-foreground "#708070")
 (defvar zenburn-term-dark-gray-foreground "#709080")
@@ -289,13 +289,13 @@ to values."
 
 	`(zenburn-primary-1 ((t (:foreground ,zenburn-yellow :weight bold))))
 	`(zenburn-primary-2 ((t (:foreground ,zenburn-orange :weight bold))))
-	'(zenburn-primary-3 ((t (:foreground ,zenburn-primary-3-color :weight bold))))
-	'(zenburn-primary-4 ((t (:foreground ,zenburn-primary-4-color :weight bold))))
-	'(zenburn-primary-5 ((t (:foreground ,zenburn-primary-5-color :weight bold))))
+	`(zenburn-primary-3 ((t (:foreground ,zenburn-primary-3-foreground :weight bold))))
+	`(zenburn-primary-4 ((t (:foreground ,zenburn-primary-4-foreground :weight bold))))
+	`(zenburn-primary-5 ((t (:foreground ,zenburn-primary-5-foreground :weight bold))))
 
 	`(zenburn-highlight-damp
 	   ((t (:foreground ,zenburn-highlight-damp-foreground
-                            :background zenburn-highlight-damp-background))))
+                            :background ,zenburn-highlight-damp-background))))
 	`(zenburn-highlight-alerting
 	   ((t (:foreground ,zenburn-highlight-alerting-foreground
                             :background ,zenburn-highlight-alerting-background))))
@@ -353,7 +353,7 @@ to values."
 	'(font-lock-error
 	   ((t (:inherit zenburn-highlight-alerting))))
 
-	`(fixme-face ((t (:foreground ,fixme-face-foreground :background ,zenburn-bg
+	`(fixme-face ((t (:foreground ,zenburn-fg :background ,zenburn-bg
                                       :weight bold :box nil)))) ; Colours taken from vim ":hl Todo"
 
 	`(semantic-tag-boundary-face ((t (:overline ,zenburn-bg+2)))) ; zenburn-bg+2
