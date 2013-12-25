@@ -126,7 +126,7 @@
 (defvar zenburn-highlight-damp-background "#2e3330")
 (defvar zenburn-highlight-alerting-foreground "#e37170")
 (defvar zenburn-highlight-alerting-background "#332323")
-(defvar zenburn-highlight-subtle-background "#464646")
+(defvar fzenburn-highlight-subtle-background "#464646")
 (defvar zenburn-lowlight-1-foreground "#606060")
 (defvar zenburn-lowlight-2-foreground "#708070")
 (defvar zenburn-term-dark-gray-foreground "#709080")
@@ -158,6 +158,10 @@
 (defvar zenburn-diff-del-foreground "#ae6161")
 (defvar zenburn-hunk-header-foreground "#fefefe")
 (defvar zenburn-none-foreground "#888888")
+(defvar zenburn-button-background "grey90")
+(defvar zenburn-button-foreground "black")
+(defvar zenburn-bright-foreground "white")
+(defvar zenburn-highlight-background "gray20")
 
 (eval-after-load 'term
   '(setq ansi-term-color-vector
@@ -553,8 +557,8 @@ to values."
 	`(custom-modified
 	   ((t (:inherit zenburn-primary-3))))
         `(custom-button-mouse
-           ((t (:background "grey90"
-                :foreground "black"
+           ((t (:background ,zenburn-button-background
+                :foreground ,zenburn-button-foreground
                 :box (:line-width 1 :style released-button)))))
 	`(custom-rogue
 	   ((t (:inhrit font-lock-warning))))
@@ -614,7 +618,7 @@ to values."
 
 	`(rcirc-my-nick ((t (:inherit zenburn-primary-1))))
 	`(rcirc-other-nick ((t (:inherit bold))))
-	`(rcirc-bright-nick ((t (:foreground "white" :inherit rcirc-other-nick))))
+	`(rcirc-bright-nick ((t (:foreground ,zenburn-bright-foreground :inherit rcirc-other-nick))))
 	`(rcirc-dim-nick ((t (:inherit font-lock-comment))))
 	`(rcirc-nick-in-message ((t (:inherit bold))))
 	`(rcirc-server ((t (:inherit font-lock-comment))))
@@ -875,12 +879,12 @@ to values."
 	`(nxml-namespace-attribute-colon
 	   ((t (:inherit nxml-attribute-colon))))
 
-	`(org-agenda-date-today ((t (:foreground "white"
+	`(org-agenda-date-today ((t (:foreground ,zenburn-bright-foreground
 				      :slant italic :weight bold))) t)       ;; white
 	`(org-agenda-structure ((t (:inherit font-lock-comment-face))))  ;; zenburn-green
 	`(org-archived ((t (:foreground ,zenburn-archived-foreground))))                    ;; zenburn-bg slight lighter
 	`(org-column ((t (:height 98 :family "DejaVu Sans Mono"))))      ;; n/a
-	`(org-checkbox ((t (:background ,zenburn-bg+2 :foreground "white"    ;; zenburn-fg on zenburn-bg+2
+	`(org-checkbox ((t (:background ,zenburn-bg+2 :foreground ,zenburn-bright-foreground    ;; zenburn-fg on zenburn-bg+2
 			     :box (:line-width 1 :style released-button))))) ;;   - turn checkboxes into buttons
 	`(org-date ((t (:foreground ,zenburn-blue :underline t))))           ;; zenburn-blue
 	`(org-deadline-announce ((t (:foreground ,zenburn-red-1))))           ;; zenburn-red-1
@@ -1060,8 +1064,8 @@ to values."
 	`(mew-face-eof-part ((t (:inherit zenburn-yellow))))
 
         `(slime-repl-inputed-output-face ((t (:inherit font-lock-warning))))
-        `(slime-highlight-edits-face ((t (:background "gray20"))))
-        `(magit-item-highlight ((t (:background "gray20"))))
+        `(slime-highlight-edits-face ((t (:background ,zenburn-highlight-background))))
+        `(magit-item-highlight ((t (:background ,zenburn-highlight-background))))
         `(magit-diff-add ((t (:foreground ,zenburn-diff-add-foreground))))
         `(magit-diff-del ((t (:foreground ,zenburn-diff-del-foreground))))
         `(magit-diff-file-header ((t (:foreground ,zenburn-term-white-foreground))))
