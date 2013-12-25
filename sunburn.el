@@ -549,7 +549,7 @@ to values."
 	`(erc-timestamp ((t (:inherit sunburn-green+1))))
 	`(erc-underline ((t (:inherit underline))))
         `(shm-quarantine-face ((t (:inherit font-lock-error))))
-        `(shm-current-face ((t (:background sunburn-highlight-subtle))))
+        `(shm-current-face ((t (:inherit sunburn-highlight-subtle))))
 
 	`(circe-highlight-nick-face ((t (:inherit sunburn-primary-1))))
 	`(circe-my-message-face ((t (:inherit sunburn-green))))

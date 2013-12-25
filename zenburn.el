@@ -609,6 +609,8 @@ to values."
 	`(erc-prompt ((t (:inherit zenburn-primary-2))))
 	`(erc-timestamp ((t (:inherit zenburn-green+1))))
 	`(erc-underline ((t (:inherit underline))))
+        `(shm-quarantine-face ((t (:inherit font-lock-error))))
+        `(shm-current-face ((t (:inherit zenburn-highlight-subtle))))
 
 	`(circe-highlight-nick-face ((t (:inherit zenburn-primary-1))))
 	`(circe-my-message-face ((t (:inherit zenburn-yellow))))
