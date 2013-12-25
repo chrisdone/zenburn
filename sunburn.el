@@ -532,7 +532,7 @@ to values."
 
 	`(erc-action ((t (:inherit erc-default))))
 	`(erc-bold ((t (:weight bold))))
-	`(erc-current-nick ((t (:inherit sunburn-primary-3))))
+	`(erc-current-nick ((t (:inherit sunburn-primary-3 :weight bold))))
         `(erc-my-nick ((t (:foreground ,sunburn-blue :weight bold))))
 	`(erc-dangerous-host ((t (:inherit font-lock-warning))))
 	`(erc-default ((t (:foreground ,sunburn-fg))))
