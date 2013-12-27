@@ -1073,6 +1073,7 @@ to values."
         `(magit-diff-file-header ((t (:foreground ,zenburn-term-white-foreground))))
         `(magit-diff-hunk-header ((t (:inherit magit-header) (:foreground ,zenburn-hunk-header-foreground))))
         `(magit-diff-none ((t (:foreground ,zenburn-none-foreground))))
+        `(magit-log-sha1 ((t (:foreground ,zenburn-green))))
         )
 
       (zenburn-make-face-alias-clauses
