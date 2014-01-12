@@ -32,6 +32,7 @@
 (defvar sunburn-bg+1 "#eeeeee")
 (defvar sunburn-bg+2 "#e8e8e8")
 (defvar sunburn-grey "#666666")
+(defvar sunburn-grey+1 "#999999")
 (defvar sunburn-red+1 "#8f4e8b")
 (defvar sunburn-red   "#8f4e8b")
 (defvar sunburn-red-1 "#8f4e8b")
@@ -608,6 +609,7 @@ to values."
 	`(gnus-header-newsgroups ((t (:inherit message-header-other))))
 
 	`(gnus-x-face ((t (:background ,sunburn-fg :foreground ,sunburn-bg))))
+        `(evaporate-face ((t (:foreground ,sunburn-grey+1))))
 
 	;; (gnus-cite-1 ((t (:inherit message-cited-text))))
 	`(gnus-cite-1 ((t (:foreground ,sunburn-blue))))
