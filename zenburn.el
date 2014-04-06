@@ -322,6 +322,9 @@ to values."
 
 	'(zenburn-title ((t (:inherit variable-pitch :weight bold))))
 
+        `(escape-glyph
+          ((t (:inherit zenburn-blue :background ,zenburn-highlight-damp-background))))
+
 	'(font-lock-builtin
 	   ((t (:inherit zenburn-blue))))
 	'(font-lock-comment
