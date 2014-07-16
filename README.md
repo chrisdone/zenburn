@@ -7,8 +7,8 @@ Also contains an additional dark-on-light theme called Sunburn, forked from the 
 
 ## Zenburn
 
-![Zenburn](http://chrisdone.com/zenburn-window.png)
+![Zenburn](http://i.imgur.com/8cKqwKl.png)
 
 ## Sunburn
 
-![Sunburn](http://chrisdone.com/sunburn-window.png)
+![Sunburn](http://i.imgur.com/9HtwXBE.png)
