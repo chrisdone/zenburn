@@ -277,7 +277,7 @@ to values."
 	`(font-lock-function-name
 	   ((t (:foreground ,sunburn-blue))))
 	'(font-lock-keyword
-	   ((t (:inherit sunburn-primary-1))))
+          ((t (:inherit sunburn-primary-1))))
 	'(font-lock-negation-char
 	   ((t (:inherit sunburn-primary-1))))
 	'(font-lock-preprocessor
@@ -288,6 +288,10 @@ to values."
 	   ((t (:inherit sunburn-primary-3))))
 	`(font-lock-variable-name
 	   ((t (:foreground ,sunburn-blue+1))))
+        `(ats-font-lock-keyword-face
+          ((t (:inherit sunburn-primary-1))))
+        `(ats-font-lock-static-face
+          ((t (:inherit sunburn-primary-2))))
 	'(font-lock-warning
 	   ((t (:inherit sunburn-highlight-damp))))
 	'(font-lock-error
