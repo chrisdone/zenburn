@@ -400,7 +400,7 @@ to values."
 	`(Buffer-menu-buffer ((t (:inherit sunburn-primary-1))))
 
 	`(region ((t (:foreground nil :background ,sunburn-bg+2))))
-	`(secondary-selection ((t (:foreground nil :background ,sunburn-term-dark-blue-foreground))))
+	`(secondary-selection ((t (:foreground nil :background ,sunburn-highlight-subtle-background))))
 
 	`(trailing-whitespace ((t (:inherit font-lock-warning))))
 	`(highlight ((t (:underline t))))
@@ -409,7 +409,8 @@ to values."
         `(show-paren-match ((t (:inherit sunburn-highlight-damp))))
 	`(match ((t (:weight bold))))
 
-	`(button ((t (:foreground ,sunburn-green :background ,sunburn-term-dark-blue-foreground
+	`(button ((t (:foreground ,sunburn-button-foreground
+                                  :background ,sunburn-button-background
 		       :weight bold :underline t))))
 
 	`(hover-highlight ((t (:underline t :foreground ,sunburn-hover-highlight-foreground))))
