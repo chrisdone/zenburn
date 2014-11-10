@@ -908,8 +908,8 @@ to values."
 	`(org-link ((t (:foreground ,zenburn-yellow-2 :underline t))))           ;; zenburn-yellow-2
 					;`(org-priority faces                                            TODO
 	`(org-scheduled ((t (:foreground ,zenburn-green+4))))                   ;; zenburn-green+4
-	`(org-scheduled-previously ((t (:foreground ,zenburn-red-4))))        ;; zenburn-red-4
-	`(org-scheduled-today ((t (:foreground ,zenburn-blue+1))))             ;; zenburn-blue+1
+	`(org-scheduled-previously ((t (:foreground ,zenburn-red))))        ;; zenburn-red-4
+	`(org-scheduled-today ((t (:foreground ,zenburn-blue))))             ;; zenburn-blue+1
 	`(org-special-keyword ((t (:foreground ,zenburn-yellow-1))))             ;; zenburn-yellow-1
 	`(org-table ((t (:foreground ,zenburn-green+2))))                       ;; zenburn-green+2
 	`(org-tag ((t (:bold t :weight bold))))                          ;; n/a
