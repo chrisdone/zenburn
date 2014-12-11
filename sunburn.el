@@ -428,9 +428,9 @@ to values."
 	`(icompletep-nb-candidates ((t (:foreground ,sunburn-green+3)))) ; sunburn-green+3
 	`(icompletep-keys ((t (:foreground ,sunburn-red)))) ; sunburn-red
 
-	`(isearch ((t (:foreground ,sunburn-fg :background ,sunburn-term-dark-blue-foreground))))
+	`(isearch ((t (:foreground ,sunburn-term-white-foreground :background ,sunburn-term-dark-blue-foreground))))
 	`(isearch-lazy-highlight
-	   ((t (:foreground ,sunburn-fg :background ,sunburn-mode-line-background :weight normal))))
+	   ((t (:foreground ,sunburn-term-white-foreground :background "#aaaaaa" :weight normal))))
 
 	`(mtorus-highlight ((t (:inherit sunburn-highlight-bluish))))
 	`(mtorus-notify-highlight ((t (:inherit sunburn-primary-1))))
