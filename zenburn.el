@@ -884,6 +884,7 @@ to values."
 	`(nxml-namespace-attribute-colon
 	   ((t (:inherit nxml-attribute-colon))))
 
+        `(org-agenda-done ((t (:inherit zenburn-green+1))))
 	`(org-agenda-date-today ((t (:foreground ,zenburn-bright-foreground
 				      :slant italic :weight bold))) t)       ;; white
 	`(org-agenda-structure ((t (:inherit font-lock-comment-face))))  ;; zenburn-green
