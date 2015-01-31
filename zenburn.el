@@ -377,6 +377,16 @@ to values."
 	`(term-bold ((t (:weight bold))))
 	`(term-underline ((t (:underline t))))
 
+        `(gmail-search-mode-from-face ((t (:inherit zenburn-blue-2))))
+        `(gmail-search-mode-subject-face ((t (:inherit zenburn-blue))))
+        `(gmail-search-mode-subject-unread-face ((t (:foreground ,zenburn-cyan :weight bold))))
+        `(gmail-search-mode-snippet-face ((t (:inherit zenburn-green+1))))
+        `(gmail-search-mode-date-face ((t (:inherit zenburn-orange))))
+        `(gmail-search-mode-labels-face ((t (:background "#393939" :foreground "#999"))))
+        `(gmail-search-mode-query-face ((t (:foreground "#999"))))
+        `(gmail-thread-mode-read-face ((t (:background "#393939"))))
+        `(gmail-thread-mode-unread-face ((t (:background "#393939" :weight bold))))
+
 	;; FIXME: Map these to ansi-term's faces (`term-red', etc.).
 	`(zenburn-term-dark-gray      ((t (:foreground ,zenburn-term-dark-gray-foreground))))
 	`(zenburn-term-light-blue     ((t (:foreground ,zenburn-term-light-blue-foreground))))

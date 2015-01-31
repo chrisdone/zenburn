@@ -198,7 +198,7 @@ to values."
     (append
       (list 'color-theme-sunburn
 	`((background-color . ,sunburn-bg)
-	   (background-mode . dark)
+	   (background-mode . light)
 	   (border-color . ,sunburn-bg)
 	   (foreground-color . ,sunburn-fg)
 	   (mouse-color . ,sunburn-fg))
@@ -317,6 +317,16 @@ to values."
 	`(term-invisible-inv  ((t (nil))))
 	`(term-bold ((t (:weight bold))))
 	`(term-underline ((t (:underline t))))
+
+        `(gmail-search-mode-from-face ((t (:inherit sunburn-blue-1))))
+        `(gmail-search-mode-subject-face ((t (:inherit sunburn-red))))
+        `(gmail-search-mode-subject-unread-face ((t (:foreground ,sunburn-red :weight bold))))
+        `(gmail-search-mode-snippet-face ((t (:inherit sunburn-green+1))))
+        `(gmail-search-mode-date-face ((t (:inherit sunburn-orange))))
+        `(gmail-search-mode-labels-face ((t (:background "#f8f8f8" :foreground "#999"))))
+        `(gmail-search-mode-query-face ((t (:foreground "#999"))))
+        `(gmail-thread-mode-read-face ((t (:background "#eeeeee"))))
+        `(gmail-thread-mode-unread-face ((t (:background "#f5f5f5" :weight bold))))
 
 	;; FIXME: Map these to ansi-term's faces (`term-red', etc.).
 	`(sunburn-term-dark-gray      ((t (:foreground ,sunburn-term-dark-gray-foreground))))
