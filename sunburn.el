@@ -57,11 +57,7 @@
 (defvar sunburn-blue-3 "#2e659c")
 (defvar sunburn-blue-4 "#4c7073")
 (defvar sunburn-blue-5 "#366060")
-
 (defvar sunburn-magenta "#8f4e8b")
-
-
-
 (defvar sunburn-primary-3-foreground "#4F4371")
 (defvar sunburn-primary-4-foreground sunburn-red+1)
 (defvar sunburn-primary-5-foreground sunburn-blue+1)
