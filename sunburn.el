@@ -347,6 +347,9 @@ to values."
 	`(sunburn-term-dark-yellow    ((t (:foreground ,sunburn-term-dark-yellow-foreground))))
 	`(sunburn-term-light-gray     ((t (:foreground ,sunburn-fg))))
 
+	
+	`(linum-relative-current-face     ((t (:background ,sunburn-bg+1))))
+
 	`(plain-widget-button
 	   ((t (:weight bold))))
 	`(plain-widget-button-pressed
@@ -358,7 +361,14 @@ to values."
 	`(plain-widget-inactive
 	   ((t (:strike-through t))))
 	`(plain-widget-single-line-field
-	   ((t (:background ,sunburn-bg+2))))
+	  ((t (:background ,sunburn-bg+2))))
+
+
+	;; sh-mode
+    ;; `(sh-heredoc ((t (:inherit 'font-lock-string-face :weight 'normal))))
+    `(sh-quoted-exec ((t (:inherit 'font-lock-preprocessor-face))))
+
+	
 
 	`(fancy-widget-button
 	   ((t (:background ,sunburn-bg+1
