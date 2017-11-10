@@ -57,7 +57,11 @@
 (defvar sunburn-blue-3 "#2e659c")
 (defvar sunburn-blue-4 "#4c7073")
 (defvar sunburn-blue-5 "#366060")
+
 (defvar sunburn-magenta "#8f4e8b")
+
+
+
 (defvar sunburn-primary-3-foreground "#4F4371")
 (defvar sunburn-primary-4-foreground sunburn-red+1)
 (defvar sunburn-primary-5-foreground sunburn-blue+1)
@@ -347,6 +351,9 @@ to values."
 	`(sunburn-term-dark-yellow    ((t (:foreground ,sunburn-term-dark-yellow-foreground))))
 	`(sunburn-term-light-gray     ((t (:foreground ,sunburn-fg))))
 
+	
+	`(linum-relative-current-face     ((t (:background ,sunburn-bg+1))))
+
 	`(plain-widget-button
 	   ((t (:weight bold))))
 	`(plain-widget-button-pressed
@@ -358,7 +365,14 @@ to values."
 	`(plain-widget-inactive
 	   ((t (:strike-through t))))
 	`(plain-widget-single-line-field
-	   ((t (:background ,sunburn-bg+2))))
+	  ((t (:background ,sunburn-bg+2))))
+
+
+	;; sh-mode
+    ;; `(sh-heredoc ((t (:inherit 'font-lock-string-face :weight 'normal))))
+    `(sh-quoted-exec ((t (:inherit 'font-lock-preprocessor-face))))
+
+	
 
 	`(fancy-widget-button
 	   ((t (:background ,sunburn-bg+1
